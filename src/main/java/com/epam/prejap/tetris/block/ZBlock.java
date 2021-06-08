@@ -1,7 +1,10 @@
 package com.epam.prejap.tetris.block;
 
 /**
+ * Z block implementation.
+ *
  * @author Łukasz Niedziela
+ * @see Block
  */
 final class ZBlock extends Block {
 
