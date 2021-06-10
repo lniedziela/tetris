@@ -12,13 +12,16 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.source>16</maven.compiler.source>
         <maven.compiler.target>16</maven.compiler.target>
+        <main.class>com.epam.prejap.tetris.Tetris</main.class>
+        <version.plugin.maven.jar>3.2.0</version.plugin.maven.jar>
+        <version.testng>7.4.0</version.testng>
     </properties>
 
     <dependencies>
         <dependency>
             <groupId>org.testng</groupId>
             <artifactId>testng</artifactId>
-            <version>7.4.0</version>
+            <version>${version.testng}</version>
             <scope>test</scope>
         </dependency>
     </dependencies>
@@ -28,12 +31,12 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-jar-plugin</artifactId>
-                <version>3.2.0</version>
+                <version>${version.plugin.maven.jar}</version>
                 <configuration>
                     <archive>
                         <manifest>
                             <addClasspath>true</addClasspath>
-                            <mainClass>com.epam.prejap.git.tetris.Tetris</mainClass>
+                            <mainClass>${main.class}</mainClass>
                         </manifest>
                     </archive>
                 </configuration>
