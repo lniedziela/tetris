@@ -12,7 +12,6 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.source>16</maven.compiler.source>
         <maven.compiler.target>16</maven.compiler.target>
-        <main.class>com.epam.prejap.tetris.Tetris</main.class>
         <version.plugin.maven.jar>3.2.0</version.plugin.maven.jar>
         <version.testng>7.4.0</version.testng>
     </properties>
@@ -36,7 +35,7 @@
                     <archive>
                         <manifest>
                             <addClasspath>true</addClasspath>
-                            <mainClass>${main.class}</mainClass>
+                            <mainClass>com.epam.prejap.tetris.Tetris</mainClass>
                         </manifest>
                     </archive>
                 </configuration>
