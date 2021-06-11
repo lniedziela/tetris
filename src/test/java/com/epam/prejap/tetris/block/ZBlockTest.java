@@ -11,7 +11,7 @@ import static org.testng.Assert.assertEquals;
  * @author Łukasz Niedziela
  * @see ZBlock
  */
-@Test(groups = {"blockShape"})
+@Test(groups = {"blockShapes"})
 public class ZBlockTest {
 
     ZBlock zBlock = new ZBlock();

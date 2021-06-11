@@ -4,7 +4,7 @@
     <test name="TetrisTests">
         <groups>
             <run>
-                <include name="blockShape"/>
+                <include name="blockShapes"/>
             </run>
         </groups>
 
