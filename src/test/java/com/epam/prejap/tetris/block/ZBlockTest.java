@@ -22,6 +22,18 @@ public class ZBlockTest {
         assertEquals(actual, expected, "Number of cols for ZBlock is incorrect! Expected: " + expected + ", but actual: " + actual);
     }
 
+    @Test(dataProvider = "dotsPosition")
+    public void dotAtReturnCorrectValue(int row, int col, int expected, String msg) {
+        int actual = zBlock.dotAt(row, col);
+        assertEquals(actual, expected, msg);
+    }
+
+    @Test(dataProvider = "correctZBlock")
+    public void checkIfZBlockCreatedCorrectly(byte[][] expected) {
+        byte[][] actual = new ZBlock().image;
+        assertEquals(actual, expected);
+    }
+
     @DataProvider
     public static Object[][] dotsPosition() {
         return new Object[][]{
@@ -34,12 +46,6 @@ public class ZBlockTest {
         };
     }
 
-    @Test(dataProvider = "dotsPosition")
-    public void dotAtReturnCorrectValue(int row, int col, int expected, String msg) {
-        int actual = zBlock.dotAt(row, col);
-        assertEquals(actual, expected, msg);
-    }
-
     @DataProvider
     public static Object[][] correctZBlock() {
         byte[][] zBlock = {
@@ -47,11 +53,5 @@ public class ZBlockTest {
                 {0, 1, 1}
         };
         return new Object[][]{zBlock};
-    }
-
-    @Test(dataProvider = "correctZBlock")
-    public void checkIfZBlockCreatedCorrectly(byte[][] expected) {
-        byte[][] actual = new ZBlock().image;
-        assertEquals(actual, expected);
     }
 }
