@@ -25,12 +25,12 @@ public class ZBlockTest {
     @DataProvider
     public static Object[][] dotsPosition() {
         return new Object[][]{
-                {0, 0, 1, "Incorrect dotAt(0, 0)!"}
-                , {0, 1, 1, "Incorrect dotAt(0, 1)!"}
-                , {0, 2, 0, "Incorrect dotAt(0, 2)!"}
-                , {1, 0, 0, "Incorrect dotAt(1, 0)!"}
-                , {1, 1, 1, "Incorrect dotAt(1, 1)!"}
-                , {1, 2, 1, "Incorrect dotAt(1, 2)!"}
+                {0, 0, 1, "Incorrect dotAt(0, 0)!"},
+                {0, 1, 1, "Incorrect dotAt(0, 1)!"},
+                {0, 2, 0, "Incorrect dotAt(0, 2)!"},
+                {1, 0, 0, "Incorrect dotAt(1, 0)!"},
+                {1, 1, 1, "Incorrect dotAt(1, 1)!"},
+                {1, 2, 1, "Incorrect dotAt(1, 2)!"}
         };
     }
 
