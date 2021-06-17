@@ -13,13 +13,13 @@ public class ZBlockTest {
     public void numberOfZBlockRowsEqualsTwo() {
         int actual = zBlock.rows();
         int expected = 2;
-        assertEquals(actual, expected, "Number of rows for ZBlock is incorrect! Expected: " + expected + ", but actual: " + actual);
+        assertEquals(actual, expected, String.format("Number of rows for ZBlock is incorrect! Expected: %d, but actual: %d.", expected, actual));
     }
 
     public void numberOfZBlockColsEqualsThree() {
         int actual = zBlock.cols();
         int expected = 3;
-        assertEquals(actual, expected, "Number of cols for ZBlock is incorrect! Expected: " + expected + ", but actual: " + actual);
+        assertEquals(actual, expected, String.format("Number of cols for ZBlock is incorrect! Expected: %d, but actual: %d.", expected, actual));
     }
 
     @Test(dataProvider = "dotsPosition")
