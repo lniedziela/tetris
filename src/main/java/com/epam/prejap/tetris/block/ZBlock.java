@@ -1,5 +1,7 @@
 package com.epam.prejap.tetris.block;
 
+import com.epam.prejap.tetris.logger.Logger;
+
 /**
  * Z block implementation.
  *
@@ -7,6 +9,7 @@ package com.epam.prejap.tetris.block;
  * @see Block
  */
 final class ZBlock extends Block {
+    private static final Logger LOGGER = Logger.getLogger(ZBlock.class);
 
     /**
      * Byte array represents "Z" block.
@@ -23,5 +26,6 @@ final class ZBlock extends Block {
 
     public ZBlock() {
         super(IMAGE);
+        LOGGER.trace("{} was created", getClass().getSimpleName());
     }
 }
