@@ -46,7 +46,6 @@ public class BlockShapeData {
                 {1, 1, 1},
                 {1, 0, 1}
         });
-
         put(ZBlock::new, new byte[][]{
                 {1, 1, 0},
                 {0, 1, 1}
